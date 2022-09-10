@@ -1,0 +1,33 @@
+.searchbar-container {
+    display: flex;
+    width: 320px;
+    height: 45px;
+    background-color: #015b97;
+    border-radius: 2px;
+}
+
+.searchbar-container input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    color: #f9f9f9;
+    letter-spacing: 1.4px;
+}
+
+.searchbar-container input::placeholder {
+    color: #b3cce1;
+    letter-spacing: 1.4px;
+}
+
+.searchbar-container span {
+    padding: 0 1rem;
+    background-color: #03386d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 200;
+}
