@@ -12,14 +12,14 @@
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: .65px;
     text-transform: uppercase;
 }
 
 span {
-    font-size: 1.45rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: #b2cce0;
 }
@@ -29,7 +29,7 @@ span {
     align-items: center;
 }
 
-.navbar-body span {
+.navbar-body >span {
     background-color: #03386d;
     margin-right: 4rem;
     font-size: 2.4rem;
