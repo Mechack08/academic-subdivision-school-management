@@ -1,0 +1,133 @@
+.asidebar-container {
+    background-color: #02386c;
+    height: 100vh;
+    padding: 3.2rem 0;
+    position: relative;
+}
+
+.asidebar-container span.logo {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 6.4rem;
+}
+
+.asidebar-container ul li {
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.asidebar-container ul li > .menu-icon {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    color: #959595;
+    font-size: 2rem;
+}
+
+.asidebar-container ul li.active {
+    background-color: #015b97;
+    position: relative;
+}
+
+.asidebar-container >ul >li.active .menu-icon {
+    color: #f9f9f9;
+}
+
+.asidebar-container >ul >li.active::after {
+    content: '';
+    height: 100%;
+    width: .5rem;
+    background-color: #5cb85c;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.asidebar-container ul li a {
+    color: #959595;
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.8rem 0;
+    margin-left: 6rem;
+}
+
+.asidebar-container >ul >li.active a {
+    color: #f9f9f9;
+}
+
+.show-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color:#011f4b;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.show-status::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    top: 0;
+    left: 0;
+    background-color: #015b97;
+    z-index: 2;
+}
+
+.show-status > .profile-pic {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 1.4rem;
+}
+.show-status > .profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #015b97;
+    position: relative;
+    z-index: 3;
+}
+
+.show-status > span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .85px;
+    margin-bottom: 1.2rem;
+}
+
+.show-status > .logout span a {
+    padding: .5rem;
+    color: #ad2929;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.show-status > .logout span {
+    display: flex;
+    align-items: center;
+}
+
+.show-status > .logout span .logout-icon {
+    color: #ad2929;
+}
+
+.show-status > .logout span a:hover {
+    text-decoration: underline;
+}
