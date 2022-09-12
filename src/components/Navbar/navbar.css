@@ -36,4 +36,21 @@ span {
     height: 45px;
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.navbar-body > span:hover {
+    background-color: #02386c;
+}
+
+.navbar-body > span.msg::after {
+    content: '';
+    position: absolute;
+    width: .85rem;
+    height: .85rem;
+    background-color: #ad2929;
+    border-radius: 50%;
+    right: 1.2rem;
+    top: 1.2rem;
 }
