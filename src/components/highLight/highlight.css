@@ -14,6 +14,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.highlight-container .box:hover {
+    transform: scale(1.1);
+    background-color: #02386c;
 }
 
 .highlight-container .box .box-title {
