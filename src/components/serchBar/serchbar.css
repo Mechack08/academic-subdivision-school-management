@@ -30,4 +30,9 @@
     align-items: center;
     font-size: 3rem;
     font-weight: 200;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.searchbar-container span:hover {
+    background-color: #02386c;
 }
