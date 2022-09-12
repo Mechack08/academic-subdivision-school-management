@@ -11,7 +11,7 @@ const Navbar = () => {
             <span>Mercredi 07 Septembre 2022 | 14h55</span>
         </div>
         <div className="navbar-body">
-            <span><FaBell /></span>
+            <span className='msg'><FaBell /></span>
             <Serchbar />
         </div>
     </div>
