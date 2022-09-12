@@ -1,0 +1,51 @@
+.highlight-container {
+    margin: 3.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.highlight-container .box {
+    width: 22rem;
+    height: 14rem;
+    background-color:#005b96;
+    border-radius: 2px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.highlight-container .box .box-title {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #959595;
+}
+.highlight-container .box .box-number {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.highlight-container .box .box-number .up {
+    color: #5cb85c;
+    font-size: 1.4rem;
+}
+.highlight-container .box .box-number .down {
+    color: #ad2929;
+    font-size: 1.4rem;
+}
+.highlight-container .box .box-number .box-number-student {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.highlight-container .box .box-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlight-container .box .box-amount span {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: #959595;
+}
