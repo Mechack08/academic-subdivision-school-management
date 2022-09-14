@@ -3,6 +3,14 @@
     grid-template-columns: 20% 80%;
 }
 
+.home-container > .aside {
+    position: fixed;
+    width: 20%;
+    top: 0;
+    left: 0;
+}
+
 .principal {
     padding: 4rem 3.2rem;
+    grid-column: 2 / -1;
 }
