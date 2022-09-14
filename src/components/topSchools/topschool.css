@@ -1,0 +1,10 @@
+.topschool-container .title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+.topschool-container .school-section:last-child {
+    margin-top: 3.2rem;
+}
