@@ -26,10 +26,18 @@
     border-bottom: .5px solid #b3cde0;
     cursor: pointer;
     font-weight: 300;
+    transition: all .3s ease-out;
+}
+
+.ecoles-container table tbody tr:hover,
+.ecoles-container table tbody tr:hover:nth-of-type(even) {
+    background-color: #267026;
+    color: #f1f1f1;
 }
 
 .ecoles-container table tbody tr:nth-of-type(even) {
     background-color: #03396c;
+    transition: all .3s ease-out;
 }
 
 .ecoles-container table tbody tr:last-of-type {
