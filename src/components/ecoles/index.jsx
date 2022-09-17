@@ -29,7 +29,7 @@ const Ecoles = ({ data, showModal, getOneSchool }) => {
                 <td>{school.name}</td>
                 <td>{school.regime}</td>
                 <td>{school.commune.name}</td>
-                <td>{school.Quartier.name}</td>
+                <td>{school.quartier.name}</td>
                 <td>{school.learners.total}</td>
               </tr>
             );
