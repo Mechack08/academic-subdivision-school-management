@@ -28,9 +28,7 @@ const Home = () => {
           <Popup closeModal={setShowPopUp} school={getSchool} />
         </div>
       )}
-      <div className="aside">
-        <Asidebar />
-      </div>
+
       <div className="principal">
         <Navbar />
         <div className="main">

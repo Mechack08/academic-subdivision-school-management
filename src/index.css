@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*,::after,::before {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,11 +14,16 @@ html {
 
 body {
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #001f4a;
 }
 
-p,h1,h2,h3,h4,span {
+p,
+h1,
+h2,
+h3,
+h4,
+span {
   color: #f9f9f9;
 }
 
@@ -24,4 +31,20 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.app-container > .asidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+}
+
+.app-container > .right-side {
+  grid-column: 2 / -1;
 }
