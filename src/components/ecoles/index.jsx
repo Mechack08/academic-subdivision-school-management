@@ -1,7 +1,12 @@
 import React from "react";
 import "./ecoles.css";
+import { useLocation } from "react-router-dom";
+import { MdDelete, MdRemoveRedEye } from "react-icons/md";
+import { FaEdit } from "react-icons/fa";
 
 const Ecoles = ({ data, showModal, getOneSchool }) => {
+  const location = useLocation().pathname;
+
   return (
     <div className="ecoles-container">
       <table>
@@ -10,9 +15,15 @@ const Ecoles = ({ data, showModal, getOneSchool }) => {
             <th>Code</th>
             <th>Nom de l'institution</th>
             <th>Regime</th>
-            <th>Commune</th>
-            <th>Quartier</th>
-            <th>Eleves</th>
+            {location === "/" ? (
+              <>
+                <th>Commune</th>
+                <th>Quartier</th>
+                <th>Eleves</th>
+              </>
+            ) : (
+              <th>Actions</th>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -28,9 +39,28 @@ const Ecoles = ({ data, showModal, getOneSchool }) => {
                 <td>{school.id}</td>
                 <td>{school.name}</td>
                 <td>{school.regime}</td>
-                <td>{school.commune.name}</td>
-                <td>{school.quartier.name}</td>
-                <td>{school.learners.total}</td>
+                {location === "/" ? (
+                  <>
+                    <td>{school.commune.name}</td>
+                    <td>{school.quartier.name}</td>
+                    <td>{school.learners.total}</td>
+                  </>
+                ) : (
+                  <td className="btns">
+                    <button className="view">
+                      <MdRemoveRedEye className="icon view" />
+                      <span>Details</span>
+                    </button>
+                    <button className="edit">
+                      <FaEdit className="icon edit" />
+                      <span>Modifier</span>
+                    </button>
+                    <button className="delete">
+                      <MdDelete className="icon delete" />
+                      <span>Supprimer</span>
+                    </button>
+                  </td>
+                )}
               </tr>
             );
           })}

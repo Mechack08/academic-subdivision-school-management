@@ -1,45 +1,79 @@
 .ecoles-container {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .ecoles-container table {
-    border-collapse: collapse;
-    font-size: 1.5rem;
-    border-radius: 5px 5px 0 0;
-    color: #f9f9f9;
-    width: 100%;
-    overflow: hidden;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  border-radius: 5px 5px 0 0;
+  color: #f9f9f9;
+  width: 100%;
+  overflow: hidden;
 }
 
 .ecoles-container table thead tr {
-    background-color: #005b96;
-    text-align: left;
-    font-weight: 700;
+  background-color: #005b96;
+  text-align: left;
+  font-weight: 700;
 }
 
 .ecoles-container table th,
 .ecoles-container table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
 
 .ecoles-container table tbody tr {
-    border-bottom: .5px solid #b3cde0;
-    cursor: pointer;
-    font-weight: 300;
-    transition: all .3s ease-out;
+  border-bottom: 0.5px solid #b3cde0;
+  cursor: pointer;
+  font-weight: 300;
+  transition: all 0.3s ease-out;
 }
 
 .ecoles-container table tbody tr:hover,
 .ecoles-container table tbody tr:hover:nth-of-type(even) {
-    background-color: #267026;
-    color: #f1f1f1;
+  background-color: #065c39;
+  color: #f1f1f1;
 }
 
 .ecoles-container table tbody tr:nth-of-type(even) {
-    background-color: #03396c;
-    transition: all .3s ease-out;
+  background-color: #03396c;
+  transition: all 0.3s ease-out;
 }
 
 .ecoles-container table tbody tr:last-of-type {
-    border-bottom: 2px solid #b3cde0;
+  border-bottom: 2px solid #b3cde0;
+}
+
+/* Style btns */
+.ecoles-container table tbody td.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ecoles-container table tbody td.btns button.view {
+  background-color: #0b9c62;
+}
+.ecoles-container table tbody td.btns button.edit {
+  background-color: #0b5394;
+}
+.ecoles-container table tbody td.btns button.delete {
+  background-color: #d63232;
+}
+.ecoles-container table tbody td button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 0.15rem;
+  z-index: 10;
+}
+.ecoles-container table tbody td button span {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.ecoles-container table tbody td button .icon {
+  color: #f1f1f1;
+  font-size: 1.6rem;
 }
