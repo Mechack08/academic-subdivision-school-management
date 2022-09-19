@@ -3,7 +3,7 @@
   grid-column: 2 / -1;
 }
 
-.home-container > .popup-container.show {
+.popup-container.show {
   position: fixed;
   top: 0;
   left: 0;
