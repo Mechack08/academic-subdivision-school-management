@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Ecoles from "../ecoles";
 import Serchbar from "../serchBar";
 import "./school.css";
 import { schools } from "../../data";
+import { MdAdd } from "react-icons/md";
+import NewSchool from "../newSchool";
 
 const School = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
+
+  // toggle popup
+  const showModal = () => {
+    setShowPopUp(true);
+  };
+
   return (
     <div className="school-container">
+      {showPopUp && (
+        <div className="popup-container show">
+          <NewSchool modal={setShowPopUp} />
+        </div>
+      )}
+
       <div className="header">
-        <h1>Liste des toutes les ecoles</h1>
+        <div className="head">
+          <h1>Liste des toutes les ecoles</h1>
+          <button className="add" onClick={showModal}>
+            <MdAdd className="icon" />
+            Nouveau
+          </button>
+        </div>
         <div className="filters">
           <div className="box regime">
             <select name="regime" id="regime">
