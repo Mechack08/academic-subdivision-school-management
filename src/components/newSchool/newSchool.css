@@ -1,0 +1,178 @@
+.newSchool-container {
+  width: 80%;
+  height: auto;
+  background-color: #03396c;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4rem;
+  border-radius: 0.25rem;
+}
+
+.newSchool-container .school {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+}
+
+.newSchool-container > .header {
+  text-align: center;
+}
+.newSchool-container > .header h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.075rem;
+  padding-bottom: 3.2rem;
+}
+
+.newSchool-container > .main > .more {
+  margin-top: 2rem;
+}
+.newSchool-container > .main > .more > span.title {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.newSchool-container > .main > .more > .body .category {
+  width: calc(50% - 0.7rem);
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.newSchool-container > .main > .more > .body .category div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: #f1f1f1;
+  background-color: #011f4b;
+  padding: 1rem 2rem;
+  position: relative;
+  border-radius: 0.25rem;
+}
+.newSchool-container > .main > .more > .body .category div input {
+  display: none;
+}
+.newSchool-container > .main > .more > .body .category div input + label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+.newSchool-container
+  > .main
+  > .more
+  > .body
+  .category
+  div
+  input
+  + label::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 4rem);
+  height: calc(100% + 2rem);
+  top: -1rem;
+  left: -2rem;
+  background-color: transparent;
+}
+.newSchool-container
+  > .main
+  > .more
+  > .body
+  .category
+  div
+  input:checked
+  + label::before {
+  border: 5px solid #0b9c62;
+  border-radius: 0.25rem;
+}
+
+.newSchool-container > .main > .more > .body > .leader {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin: 1.4rem 0;
+  gap: 2rem;
+}
+.newSchool-container > .main > .more > .body > .leader > .infos {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.newSchool-container > .main > .more > .body > .leader > .infos > .info {
+  display: flex;
+  gap: 1.6rem;
+  background-color: #0b9c62;
+  padding: 1.1rem 2rem;
+  border-radius: 0.25rem;
+}
+.newSchool-container > .main > .more > .body > .leader > .infos > .info span {
+  font-size: 1.4rem;
+}
+.newSchool-container
+  > .main
+  > .more
+  > .body
+  > .leader
+  > .infos
+  > .info
+  span:nth-child(2) {
+  font-weight: 600;
+}
+
+.newSchool-container > .main > .more > .body > .address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.newSchool-container > .main > .more > .body > .address select {
+  height: 4.5rem;
+  outline: none;
+  border: none;
+  background-color: #011f4b;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  letter-spacing: 0.075rem;
+  border-radius: 0.25rem;
+}
+
+.newSchool-container > .main > .more > .footer {
+  position: relative;
+}
+.newSchool-container > .main > .more > .footer button {
+  position: absolute;
+  bottom: -3rem;
+  right: -3rem;
+  padding: 0.5rem 1rem;
+  background-color: #d63232;
+  border: none;
+  color: #f1f1f1;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.newSchool-container > .main > .more > .footer button:hover {
+  letter-spacing: 0.1rem;
+}
+
+.newSchool-container > .main > .more > .body > button.save {
+  font-size: 1.8rem;
+  color: #f1f1f1;
+  font-weight: 600;
+  letter-spacing: 0.085rem;
+  padding: 1rem 2rem;
+  width: 30%;
+  background-color: #046e3c;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.newSchool-container > .main > .more > .body > button.save:hover {
+  background-color: #04512d;
+  letter-spacing: 0.25rem;
+}
