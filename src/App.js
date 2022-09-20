@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Asidebar from "./components/Asidebar";
 import School from "./components/school";
 import { useLocation } from "react-router-dom";
+import Student from "./components/student";
 
 function App() {
   const location = useLocation().pathname;
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/ecoles" element={<School />}></Route>
+          <Route path="/eleves" element={<Student />}></Route>
         </Routes>
       </div>
     </div>
