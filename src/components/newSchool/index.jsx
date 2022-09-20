@@ -78,7 +78,9 @@ const NewSchool = ({ modal }) => {
                 <option value="2">Butenje</option>
               </select>
             </div>
-            <button className="save">Enregistrer</button>
+            <div className="btn-container">
+              <button className="submit-btn">Enregistrer</button>
+            </div>
           </div>
           <div className="footer">
             <button onClick={() => modal(false)}>Fermer</button>
