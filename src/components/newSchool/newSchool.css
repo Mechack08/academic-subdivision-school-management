@@ -158,21 +158,6 @@
   letter-spacing: 0.1rem;
 }
 
-.newSchool-container > .main > .more > .body > button.save {
-  font-size: 1.8rem;
-  color: #f1f1f1;
-  font-weight: 600;
-  letter-spacing: 0.085rem;
-  padding: 1rem 2rem;
+.newSchool-container > .main > .more > .body > .btn-container {
   width: 30%;
-  background-color: #046e3c;
-  border: none;
-  margin-top: 1rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.newSchool-container > .main > .more > .body > button.save:hover {
-  background-color: #04512d;
-  letter-spacing: 0.25rem;
 }
