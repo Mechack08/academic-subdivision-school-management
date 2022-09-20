@@ -1,0 +1,56 @@
+.student-container > .header > .title > span {
+  display: inline-block;
+  margin: 1rem 0 0;
+  font-size: 1.4rem;
+}
+
+.student-container > .body > .filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.student-container > .body > .filters .filter {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.25rem;
+}
+
+.student-container > .body > .filters .filter select {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: #0c587b;
+  color: #f1f1f1;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.student-container > .body > .result {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.student-container > .body > .result p {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  font-weight: 300;
+  background-color: #065c39;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.student-container > .body > .result:hover {
+  letter-spacing: 0.09rem;
+}
+
+.student-container > .body > .result p > span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
