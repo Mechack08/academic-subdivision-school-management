@@ -429,3 +429,256 @@ export const schools = [
     },
   },
 ];
+
+export const students = [
+  {
+    id: "1",
+    name: "Mbusa",
+    postname: "Makasi",
+    lastname: "Dorcas",
+    birthday: "22/03/2002",
+    gender: "F",
+    // classe
+    class: {
+      niveau: "Sixieme",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "Commercial et gestion",
+    },
+    school: {
+      name: "Institut Vungi",
+      commune: {
+        name: "Mulekera",
+      },
+      type: "Secondaire",
+    },
+  },
+  {
+    id: "2",
+    name: "Ezekiel",
+    postname: "Kituta",
+    lastname: "Jean",
+    birthday: "22/09/2001",
+    gender: "M",
+    // classe
+    class: {
+      niveau: "Sixieme",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "",
+    },
+    school: {
+      name: "EPA Walikale",
+      commune: {
+        name: "Mulekera",
+      },
+      type: "Primaire",
+    },
+  },
+  {
+    id: "3",
+    name: "Freeman",
+    postname: "Aliaka",
+    lastname: "",
+    birthday: "22/09/2001",
+    gender: "M",
+    // classe
+    class: {
+      niveau: "Troisieme",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "Construction",
+    },
+    school: {
+      name: "Institut Vungi",
+      commune: {
+        name: "Kimemi",
+      },
+      type: "Secondaire",
+    },
+  },
+  {
+    id: "4",
+    name: "Asifiwe",
+    postname: "Aliaka",
+    lastname: "Marie",
+    birthday: "22/09/2007",
+    gender: "F",
+    // classe
+    class: {
+      niveau: "Premiere",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "",
+    },
+    school: {
+      name: "EPA Kitulu",
+      commune: {
+        name: "Kimemi",
+      },
+      type: "Primaire",
+    },
+  },
+  {
+    id: "5",
+    name: "Mugisho",
+    postname: "Bafakarakara",
+    lastname: "Jean leon",
+    birthday: "09/09/2004",
+    gender: "F",
+    // classe
+    class: {
+      niveau: "Deuxieme",
+    },
+    year: {
+      school_year: "2021-2022",
+    },
+    option: {
+      name: "Construction",
+    },
+    school: {
+      name: "Malikiya wa Mbingu",
+      commune: {
+        name: "Kimemi",
+      },
+      type: "Secondaire",
+    },
+  },
+  {
+    id: "6",
+    name: "Mbusa",
+    postname: "Makasi",
+    lastname: "Dorcas",
+    birthday: "22/03/2002",
+    gender: "F",
+    // classe
+    class: {
+      niveau: "Sixieme",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "Commercial et gestion",
+    },
+    school: {
+      name: "Institut Vungi",
+      commune: {
+        name: "Mulekera",
+      },
+      type: "Secondaire",
+    },
+  },
+  {
+    id: "7",
+    name: "Ezekiel",
+    postname: "Kituta",
+    lastname: "Jean",
+    birthday: "22/09/2001",
+    gender: "M",
+    // classe
+    class: {
+      niveau: "Sixieme",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "Commercial et gestion",
+    },
+    school: {
+      name: "Institut Kavahendi",
+      commune: {
+        name: "Mulekera",
+      },
+      type: "Primaire",
+    },
+  },
+  {
+    id: "8",
+    name: "Freeman",
+    postname: "Aliaka",
+    lastname: "",
+    birthday: "22/09/2001",
+    gender: "M",
+    // classe
+    class: {
+      niveau: "Troisieme",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "Construction",
+    },
+    school: {
+      name: "Institut Mutiri",
+      commune: {
+        name: "Kimemi",
+      },
+      type: "Secondaire",
+    },
+  },
+  {
+    id: "9",
+    name: "Asifiwe",
+    postname: "Aliaka",
+    lastname: "Marie",
+    birthday: "22/09/2007",
+    gender: "F",
+    // classe
+    class: {
+      niveau: "Premiere",
+    },
+    year: {
+      school_year: "2022-2023",
+    },
+    option: {
+      name: "Construction",
+    },
+    school: {
+      name: "Institut Mutiri",
+      commune: {
+        name: "Kimemi",
+      },
+      type: "Secondaire",
+    },
+  },
+  {
+    id: "10",
+    name: "Mugisho",
+    postname: "Bafakarakara",
+    lastname: "Jean leon",
+    birthday: "09/09/2004",
+    gender: "F",
+    // classe
+    class: {
+      niveau: "Deuxieme",
+    },
+    year: {
+      school_year: "2021-2022",
+    },
+    option: {
+      name: "Construction",
+    },
+    school: {
+      name: "Complexe Scolaire les Roches",
+      commune: {
+        name: "Kimemi",
+      },
+      type: "Primaire",
+    },
+  },
+];
