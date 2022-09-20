@@ -1,0 +1,21 @@
+.leader-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.leader-container .radio-container span.label {
+  color: #dedcdc;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.075;
+}
+.leader-container .radio-container .radio-btns {
+  display: flex;
+  gap: 2rem;
+  height: 4.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn-save {
+  width: 100%;
+}
