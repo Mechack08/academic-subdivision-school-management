@@ -24,7 +24,7 @@ const School = () => {
 
       <div className="header">
         <div className="head">
-          <h1>Liste des toutes les ecoles</h1>
+          <h1 className="right-title">Liste des toutes les ecoles</h1>
           <button className="add" onClick={showModal}>
             <MdAdd className="icon" />
             Nouveau
