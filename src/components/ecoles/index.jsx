@@ -9,7 +9,7 @@ const Ecoles = ({ data, showModal, getOneSchool }) => {
 
   return (
     <div className="ecoles-container">
-      <table>
+      <table className="list-table">
         <thead>
           <tr className="header">
             <th>Code</th>
