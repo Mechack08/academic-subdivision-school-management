@@ -56,7 +56,8 @@ img {
 
 /* Right side */
 .school-container,
-.student-container {
+.student-container,
+.settings-container {
   padding: 4rem 3.2rem;
   grid-column: 2 / -1;
 }
@@ -102,4 +103,47 @@ table.list-table tbody tr:nth-of-type(even) {
 
 table.list-table tbody tr:last-of-type {
   border-bottom: 2px solid #b3cde0;
+}
+
+/* Radio BTN */
+.radio-btn {
+  display: flex;
+  font-size: 1.6rem;
+  color: #aaa9a9;
+  font-weight: 300;
+}
+.radio-btn label {
+  border: 1px solid #134364;
+  padding: 1rem 1.4rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.radio-btn input {
+  display: none;
+}
+.radio-btn input:checked + label {
+  background-color: #065c39;
+  border: 1px solid #065c39;
+  color: #f1f1f1;
+  font-weight: 400;
+}
+
+/* Submit BTN */
+button.submit-btn {
+  font-size: 1.8rem;
+  color: #f1f1f1;
+  font-weight: 600;
+  letter-spacing: 0.085rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #046e3c;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+button.submit-btn:hover {
+  background-color: #04512d;
+  letter-spacing: 0.25rem;
 }
