@@ -5,6 +5,7 @@ import Asidebar from "./components/Asidebar";
 import School from "./components/school";
 import { useLocation } from "react-router-dom";
 import Student from "./components/student";
+import Settings from "./components/settings";
 
 function App() {
   const location = useLocation().pathname;
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/ecoles" element={<School />}></Route>
           <Route path="/eleves" element={<Student />}></Route>
+          <Route path="/parametres" element={<Settings />}></Route>
         </Routes>
       </div>
     </div>
