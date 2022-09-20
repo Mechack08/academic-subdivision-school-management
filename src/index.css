@@ -27,6 +27,11 @@ span {
   color: #f9f9f9;
 }
 
+.right-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -47,4 +52,54 @@ img {
 
 .app-container > .right-side {
   grid-column: 2 / -1;
+}
+
+/* Right side */
+.school-container,
+.student-container {
+  padding: 4rem 3.2rem;
+  grid-column: 2 / -1;
+}
+
+/* Table style */
+table.list-table {
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  border-radius: 5px 5px 0 0;
+  color: #f9f9f9;
+  width: 100%;
+  overflow: hidden;
+}
+
+table.list-table thead tr {
+  background-color: #005b96;
+  text-align: left;
+  font-weight: 700;
+}
+
+table.list-table th,
+table.list-table td {
+  padding: 12px 15px;
+}
+
+table.list-table tbody tr {
+  border-bottom: 0.5px solid #b3cde0;
+  cursor: pointer;
+  font-weight: 300;
+  transition: all 0.3s ease-out;
+}
+
+table.list-table tbody tr:hover,
+table.list-table tbody tr:hover:nth-of-type(even) {
+  background-color: #065c39;
+  color: #f1f1f1;
+}
+
+table.list-table tbody tr:nth-of-type(even) {
+  background-color: #03396c;
+  transition: all 0.3s ease-out;
+}
+
+table.list-table tbody tr:last-of-type {
+  border-bottom: 2px solid #b3cde0;
 }
