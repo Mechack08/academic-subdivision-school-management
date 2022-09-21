@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import Commune from "../commune";
 import Leader from "../leader";
+import Quarter from "../quarter";
+import Year from "../year";
 import "./settings.css";
 
 const Settings = () => {
   const [showAddConfigs, setShowAddConfigs] = useState({
-    leader: true,
+    leader: false,
     year: false,
     commune: false,
     quarter: false,
@@ -69,6 +72,21 @@ const Settings = () => {
       {showAddConfigs.leader && (
         <div className="config-display">
           <Leader />
+        </div>
+      )}
+      {showAddConfigs.year && (
+        <div className="config-display">
+          <Year />
+        </div>
+      )}
+      {showAddConfigs.commune && (
+        <div className="config-display">
+          <Commune />
+        </div>
+      )}
+      {showAddConfigs.quarter && (
+        <div className="config-display">
+          <Quarter />
         </div>
       )}
     </div>
