@@ -8,7 +8,7 @@ import "./settings.css";
 
 const Settings = () => {
   const [showAddConfigs, setShowAddConfigs] = useState({
-    leader: false,
+    leader: true,
     year: false,
     commune: false,
     quarter: false,
