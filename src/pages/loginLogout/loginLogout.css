@@ -1,0 +1,153 @@
+.login-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #001f4a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container .content {
+  background-color: #03396c;
+  padding: 4rem;
+  width: 60%;
+  height: auto;
+  display: flex;
+}
+
+.login-container .content > .main {
+  flex: 2;
+}
+
+.login-container .content > .aside {
+  flex: 1;
+}
+
+.login-container .content > .main .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-container .content > .main .title > h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.085rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.login-container .content > .main .title span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #d4d4d4;
+}
+
+.login-container .content > .main .body .input {
+  margin-bottom: 2rem;
+}
+.login-container .content > .main .body .input a {
+  color: #d4d4d4;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  letter-spacing: 0.075rem;
+  transition: all 0.3s ease-out;
+}
+.login-container .content > .main .body .input a:hover {
+  text-decoration: underline;
+}
+
+.login-container .content .aside {
+  align-self: flex-end;
+  position: relative;
+}
+.login-container .content .aside span {
+  font-size: 1.6rem;
+  display: inline-block;
+  font-weight: 200;
+  letter-spacing: 0.065rem;
+  color: #d4d4d4;
+  margin-left: 2rem;
+  text-align: center;
+}
+.login-container .content .aside span.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+.login-container .content > .main .body .btn {
+  height: 4.5rem;
+}
+
+.login-container .content .aside div.anim {
+  position: relative;
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+  /* background-color: aqua; */
+  margin: 0 auto 4rem;
+}
+.login-container .content .aside div.anim::after,
+.login-container .content .aside div.anim::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+}
+
+.login-container .content .aside div.anim::after {
+  bottom: 0;
+  right: 0;
+  background-color: brown;
+  animation: animaRight 2s ease-out infinite;
+}
+.login-container .content .aside div.anim::before {
+  background-color: chocolate;
+  top: 0;
+  left: 0;
+  animation: animaLeft 2s ease-out infinite;
+}
+
+@keyframes animaLeft {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 100%;
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: rotate(360deg) scale(0.5);
+  }
+  75% {
+    top: 100%;
+    left: 0;
+  }
+}
+
+@keyframes animaRight {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    bottom: 0;
+    right: 100%;
+  }
+  50% {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(360deg) scale(0.5);
+  }
+  75% {
+    bottom: 100%;
+    right: 0;
+  }
+}
