@@ -41,7 +41,7 @@ const Asidebar = ({ location }) => {
         <div className="logout">
           <span>
             <MdLogout className="logout-icon" />
-            <a href="#">Deconnexion</a>
+            <Link to="/login">Deconnexion</Link>
           </span>
         </div>
       </div>
