@@ -5,10 +5,11 @@
 }
 
 .input-container label {
-  color: #dedcdc;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.075;
+  color: #989898;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.095;
+  text-transform: uppercase;
 }
 
 .input-container input {
