@@ -30,7 +30,10 @@ const Home = () => {
       )}
 
       <div className="principal">
-        <Navbar />
+        <Navbar
+          title="Sous division Bbo"
+          dataHour="Mercredi 07 Septembre 2022 | 14h55"
+        />
         <div className="main">
           <HighLight />
           <TopSchools showModal={showModal} getOneSchool={getOneSchool} />
