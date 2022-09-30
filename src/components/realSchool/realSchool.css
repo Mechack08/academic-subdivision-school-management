@@ -1,0 +1,7 @@
+.home-container .main .best-student h1.title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
