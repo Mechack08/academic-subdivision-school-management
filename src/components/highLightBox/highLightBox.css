@@ -1,0 +1,50 @@
+.box-display {
+  width: 22rem;
+  height: 14rem;
+  background-color: #005b96;
+  border-radius: 2px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.box-display:hover {
+  transform: scale(1.1);
+  background-color: #02386c;
+}
+
+.box-display .box-title {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #959595;
+}
+.box-display .box-number {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.box-display .box-number .up {
+  color: #5cb85c;
+  font-size: 1.4rem;
+}
+.box-display .box-number .down {
+  color: #ad2929;
+  font-size: 1.4rem;
+}
+.box-display .box-number .box-number-student {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.box-display .box-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-display .box-amount span {
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #959595;
+}
