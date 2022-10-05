@@ -8,6 +8,7 @@ import Student from "./components/student";
 import Settings from "./components/settings";
 import LoginLogout from "./pages/loginLogout";
 import RealSchool from "./components/realSchool";
+import SchoolStudents from "./components/schoolStudents";
 
 function App() {
   const location = useLocation().pathname;
@@ -25,6 +26,7 @@ function App() {
           <Route path="/parametres" element={<Settings />}></Route>
           <Route path="/login" element={<LoginLogout />}></Route>
           <Route path="/ecole" element={<RealSchool />}></Route>
+          <Route path="/ecole/eleves" element={<SchoolStudents />}></Route>
         </Routes>
       </div>
     </div>
