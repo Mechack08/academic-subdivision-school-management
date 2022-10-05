@@ -81,7 +81,7 @@ const Student = () => {
         </div>
 
         <div className="main">
-          <StudentList data={students} />
+          <StudentList data={students} division={true} />
         </div>
       </div>
     </div>

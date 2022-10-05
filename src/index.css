@@ -57,7 +57,8 @@ img {
 /* Right side */
 .school-container,
 .student-container,
-.settings-container {
+.settings-container,
+.scStudents-container {
   padding: 4rem 3.2rem;
   grid-column: 2 / -1;
 }
@@ -146,4 +147,46 @@ button.submit-btn {
 button.submit-btn:hover {
   background-color: #04512d;
   letter-spacing: 0.25rem;
+}
+
+/* Add new BTN */
+button.add-new {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #f1f1f1;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  background-color: #005b96;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+button.add-new:hover {
+  letter-spacing: 0.2rem;
+}
+
+/* Options Inputs */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.filters .filter {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.25rem;
+}
+.filters .filter select {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: #0c587b;
+  color: #f1f1f1;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
 }
