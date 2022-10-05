@@ -1,12 +1,9 @@
 import React from "react";
-import HighLightBox from "../highLightBox";
 import HighLightSchool from "../highLightSchool";
 import Navbar from "../Navbar";
 import StudentList from "../studentList";
 import { students } from "../../data";
 import "./realSchool.css";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const RealSchool = () => {
   const studentsList = students.filter(
